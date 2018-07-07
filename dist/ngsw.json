@@ -1,0 +1,101 @@
+{
+  "configVersion": 1,
+  "index": "https://minhlk.github.io/MKAnime/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "urls": [
+        "https://minhlk.github.io/MKAnime/favicon.ico",
+        "https://minhlk.github.io/MKAnime/index.html",
+        "https://minhlk.github.io/MKAnime/main.0e24b4d69792bec784f4.js",
+        "https://minhlk.github.io/MKAnime/polyfills.a1f06260728c7b17a7ad.js",
+        "https://minhlk.github.io/MKAnime/runtime.a66f828dca56eeb90e02.js",
+        "https://minhlk.github.io/MKAnime/scripts.d41eb1ecfdc1f0d8e6e7.js",
+        "https://minhlk.github.io/MKAnime/styles.cdbefb9eab5cc33af850.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "urls": [
+        "https://minhlk.github.io/MKAnime/assets/icons/icon-128x128.png",
+        "https://minhlk.github.io/MKAnime/assets/icons/icon-144x144.png",
+        "https://minhlk.github.io/MKAnime/assets/icons/icon-152x152.png",
+        "https://minhlk.github.io/MKAnime/assets/icons/icon-192x192.png",
+        "https://minhlk.github.io/MKAnime/assets/icons/icon-384x384.png",
+        "https://minhlk.github.io/MKAnime/assets/icons/icon-512x512.png",
+        "https://minhlk.github.io/MKAnime/assets/icons/icon-72x72.png",
+        "https://minhlk.github.io/MKAnime/assets/icons/icon-96x96.png",
+        "https://minhlk.github.io/MKAnime/assets/images/icon.png",
+        "https://minhlk.github.io/MKAnime/assets/scripts/custom.js"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [
+    {
+      "name": "api-freshness",
+      "patterns": [
+        "\\/episode\\/list",
+        "https:\\/\\/minhlk\\.github\\.io\\/MKAnime\\/genre\\/list"
+      ],
+      "strategy": "freshness",
+      "maxSize": 100,
+      "maxAge": 3600000,
+      "timeoutMs": 10000,
+      "version": 1
+    },
+    {
+      "name": "api-performance",
+      "patterns": [
+        "\\/genre\\/list",
+        "\\/episode\\/list"
+      ],
+      "strategy": "performance",
+      "maxSize": 100,
+      "maxAge": 86400000,
+      "version": 1
+    }
+  ],
+  "hashTable": {
+    "https://minhlk.github.io/MKAnime/assets/icons/icon-128x128.png": "dae3b6ed49bdaf4327b92531d4b5b4a5d30c7532",
+    "https://minhlk.github.io/MKAnime/assets/icons/icon-144x144.png": "b0bd89982e08f9bd2b642928f5391915b74799a7",
+    "https://minhlk.github.io/MKAnime/assets/icons/icon-152x152.png": "7479a9477815dfd9668d60f8b3b2fba709b91310",
+    "https://minhlk.github.io/MKAnime/assets/icons/icon-192x192.png": "1abd80d431a237a853ce38147d8c63752f10933b",
+    "https://minhlk.github.io/MKAnime/assets/icons/icon-384x384.png": "329749cd6393768d3131ed6304c136b1ca05f2fd",
+    "https://minhlk.github.io/MKAnime/assets/icons/icon-512x512.png": "559d9c4318b45a1f2b10596bbb4c960fe521dbcc",
+    "https://minhlk.github.io/MKAnime/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
+    "https://minhlk.github.io/MKAnime/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
+    "https://minhlk.github.io/MKAnime/assets/images/icon.png": "d259f146a922b32c8ae98eb3140324b6922ee6ef",
+    "https://minhlk.github.io/MKAnime/assets/scripts/custom.js": "792067ea1eeb3028edc8f2950d674d1bdf5019be",
+    "https://minhlk.github.io/MKAnime/favicon.ico": "04ea4d392c63968ee86d57f980aa91b306ca4fcd",
+    "https://minhlk.github.io/MKAnime/index.html": "b8bed62fdc8a39e7adb05ccb9825b9cea80b0281",
+    "https://minhlk.github.io/MKAnime/main.0e24b4d69792bec784f4.js": "b33322815e95b526bb150b3f7c95cc472ed28b22",
+    "https://minhlk.github.io/MKAnime/polyfills.a1f06260728c7b17a7ad.js": "2f42da22fe0380a8ab7b34e4f489147175771000",
+    "https://minhlk.github.io/MKAnime/runtime.a66f828dca56eeb90e02.js": "078e320cc6fdaf355836c3b1c52b059cdd33fc7e",
+    "https://minhlk.github.io/MKAnime/scripts.d41eb1ecfdc1f0d8e6e7.js": "cdde2a2de114ce6eaf55a7cec6b12e221bfe2a97",
+    "https://minhlk.github.io/MKAnime/styles.cdbefb9eab5cc33af850.css": "a2d545d68644e058c24e53292e8a9bc839ce9d01"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^\\/]*\\.[^\\/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^\\/]*__[^\\/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^\\/]*__[^\\/]*\\/.*$"
+    }
+  ]
+}
